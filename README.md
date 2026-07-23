@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moto Moto Paulínia — Site + Painel Administrativo
 
-## Getting Started
+Site de vendas de motos seminovas com catálogo público (Next.js + ISR) e painel
+administrativo (`/admin`) para o dono da loja gerenciar o estoque, sem depender
+de programador. Stack: **Next.js (App Router) + Supabase (Postgres, Auth,
+Storage) + Tailwind CSS**, seguindo o SDD do projeto.
 
-First, run the development server:
+O visual foi migrado 1:1 do protótipo HTML original (`Moto Moto Paulínia`),
+com os dados reais das 16 motos do protótipo prontos para popular o banco.
+
+## 1. Pré-requisitos
+
+- Node.js 20+
+- Uma conta gratuita em [supabase.com](https://supabase.com)
+
+## 2. Criar o projeto Supabase
+
+1. Crie um projeto em [supabase.com/dashboard](https://supabase.com/dashboard).
+2. Vá em **SQL Editor** e rode o conteúdo de `database/schema.sql`
+   (cria tabelas, RLS e o bucket de fotos).
+3. Vá em **Settings > API** e copie:
+   - `Project URL`
+   - `anon public key`
+   - `service_role key` (fica em "Project API keys", **nunca** exponha no
+     front-end — só é usada pelo script de seed)
+
+## 3. Configurar variáveis de ambiente
+
+```bash
+cp .env.local.example .env.local
+```
+
+Preencha `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` e
+`SUPABASE_SERVICE_ROLE_KEY` com os valores copiados no passo anterior.
+
+## 4. Instalar dependências e popular o banco
+
+```bash
+npm install
+npm run seed
+```
+
+O `npm run seed` cria as marcas (Honda, Yamaha, Triumph, Suzuki), categorias
+(Seminova, Premium) e as 16 motos do protótipo original, enviando as fotos
+reais (em `public/seed/motos/`) para o Supabase Storage.
+
+## 5. Criar seu usuário admin
+
+1. No dashboard do Supabase, vá em **Authentication > Users > Add user** e
+   crie seu usuário (e-mail + senha).
+2. No **SQL Editor**, edite `database/create-admin.sql` trocando o e-mail
+   pelo que você acabou de criar, e rode o script — isso dá a esse usuário
+   acesso de admin ao painel `/admin`.
+
+## 6. Rodar o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Site público: [http://localhost:3000](http://localhost:3000)
+- Painel administrativo: [http://localhost:3000/admin](http://localhost:3000/admin)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sem o Supabase configurado, o site ainda sobe e mostra um aviso no topo das
+páginas públicas explicando o que falta — assim dá pra ver o layout antes de
+configurar o banco.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura do projeto
 
-## Learn More
+```
+database/           schema.sql (tabelas + RLS + storage) e create-admin.sql
+scripts/seed.mjs     popula o banco com as 16 motos do protótipo
+src/app/(public)/    site público: home, /motos, /motos/[slug], /marcas/[slug], /contato
+src/app/admin/       painel administrativo (login + área protegida)
+src/components/      componentes React (public/ e admin/)
+src/lib/data/        leituras do Supabase (Server Components)
+src/lib/actions/     Server Actions (mutações + revalidação + log de auditoria)
+src/lib/supabase/    clients Supabase (browser, server, middleware)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Decisões e próximos passos (ver seção 14 do SDD)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ficaram como pontos em aberto, para decidir com o cliente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **WhatsApp:** hoje usa link `wa.me` simples (igual ao protótipo). Migrar
+  para WhatsApp Business API é possível depois, sem mudar a UI.
+- **Imagens:** usa Supabase Storage nativo. Cloudinary pode ser adicionado
+  depois se precisar de otimização adicional.
+- **E-mail de notificação de contato:** o formulário grava em `contatos`, mas
+  o envio de e-mail (SMTP/Resend) ainda não está integrado — é só plugar em
+  `src/lib/actions/contatos.ts`.
+- **Reordenar fotos:** implementado com botões (◀ ▶) em vez de
+  drag-and-drop, para manter o escopo simples nesta primeira versão.

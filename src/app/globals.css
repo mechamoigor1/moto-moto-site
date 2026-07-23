@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-orange: #ff6b00;
+  --color-orange-dark: #c44e00;
+  --color-black: #0a0a0a;
+  --color-dark: #141414;
+  --color-card: #1c1c1c;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-muted: #888888;
+  --color-green: #25d366;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-orange: var(--color-orange);
+  --color-orange-dark: var(--color-orange-dark);
+  --color-black: var(--color-black);
+  --color-dark: var(--color-dark);
+  --color-card: var(--color-card);
+  --color-border: var(--color-border);
+  --color-muted: var(--color-muted);
+  --color-green: var(--color-green);
+  --font-display: var(--font-barlow-condensed), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-black);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@layer components {
+  .campo-input {
+    @apply w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-white placeholder:text-muted focus:border-orange/50 focus:outline-none;
+  }
+  .campo-select {
+    @apply w-full rounded-lg border border-border bg-card px-4 py-2.5 text-sm text-white focus:border-orange/50 focus:outline-none;
+  }
 }

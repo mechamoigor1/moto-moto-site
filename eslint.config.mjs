@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Skills vendored from obra/superpowers — not part of the app.
+    ".claude/**",
   ]),
 ]);
 
