@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { registrarLog } from "./auditoria";
 import { slugify } from "@/lib/utils";
+import { publicStorageObject } from "@/lib/storage-url";
 import type { StatusMoto } from "@/types/database";
 
 const motoSchema = z.object({
@@ -188,6 +189,23 @@ export async function excluirMoto(id: string) {
     .eq("id", id)
     .maybeSingle()
     .returns<MotoComMarcaSlug>();
+
+  const { data: imagens, error: imagensError } = await supabase
+    .from("imagens")
+    .select("url")
+    .eq("moto_id", id);
+
+  if (imagensError) throw new Error("Não foi possível localizar as fotos da moto.");
+
+  for (const imagem of imagens ?? []) {
+    const object = publicStorageObject(imagem.url);
+    if (!object) throw new Error("Não foi possível localizar um arquivo de foto da moto.");
+
+    const { error: storageError } = await supabase.storage.from(object.bucket).remove([object.path]);
+    if (storageError) {
+      throw new Error("Não foi possível remover todas as fotos da moto. A moto não foi apagada.");
+    }
+  }
 
   const { error } = await supabase.from("motos").delete().eq("id", id);
   if (error) throw new Error("Não foi possível excluir a moto.");

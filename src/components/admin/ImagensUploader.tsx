@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import Image from "next/image";
 import { createClient } from "@/lib/supabase/client";
 import { adicionarImagem, removerImagem, moverImagem } from "@/lib/actions/imagens";
+import { convertImageToWebp } from "@/lib/image-webp";
 import type { Imagem } from "@/types/database";
 
 export function ImagensUploader({
@@ -26,15 +27,20 @@ export function ImagensUploader({
     try {
       const supabase = createClient();
       for (const file of Array.from(files)) {
-        const ext = file.name.split(".").pop() ?? "jpg";
-        const path = `${motoId}/${crypto.randomUUID()}.${ext}`;
+        const webp = await convertImageToWebp(file);
+        const path = `${motoId}/${crypto.randomUUID()}.webp`;
         const { error } = await supabase.storage
-          .from("motos-fotos")
-          .upload(path, file, { cacheControl: "3600" });
+          .from("motos-fotos-webp")
+          .upload(path, webp, { cacheControl: "31536000", contentType: "image/webp" });
         if (error) throw error;
 
-        const { data } = supabase.storage.from("motos-fotos").getPublicUrl(path);
-        await adicionarImagem(motoId, data.publicUrl, altBase);
+        const { data } = supabase.storage.from("motos-fotos-webp").getPublicUrl(path);
+        try {
+          await adicionarImagem(motoId, data.publicUrl, altBase);
+        } catch (databaseError) {
+          await supabase.storage.from("motos-fotos-webp").remove([path]);
+          throw databaseError;
+        }
       }
     } catch (e) {
       setErro(e instanceof Error ? e.message : "Falha no upload.");
@@ -83,7 +89,7 @@ export function ImagensUploader({
         </div>
       )}
       <label className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-dashed border-border px-4 py-2.5 text-sm text-muted hover:border-orange/50 hover:text-white">
-        {enviando ? "Enviando..." : "+ Adicionar fotos"}
+        {enviando ? "Convertendo e enviando..." : "+ Adicionar fotos"}
         <input
           type="file"
           accept="image/*"

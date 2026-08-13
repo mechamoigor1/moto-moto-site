@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Confira todas as motos seminovas disponíveis, com filtros por marca e preço.",
 };
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 export default async function MotosPage() {
   const [config, motos, marcas] = await Promise.all([

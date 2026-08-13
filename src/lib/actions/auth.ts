@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { safeAdminRedirect } from "@/lib/safe-redirect";
 
 export type EstadoLogin = {
   status: "idle" | "erro";
@@ -27,7 +28,7 @@ export async function entrar(
     return { status: "erro", mensagem: "E-mail ou senha inválidos." };
   }
 
-  redirect(next || "/admin");
+  redirect(safeAdminRedirect(next));
 }
 
 export async function sair() {

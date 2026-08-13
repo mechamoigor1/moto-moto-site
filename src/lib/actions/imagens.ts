@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { publicStorageObject } from "@/lib/storage-url";
 import { registrarLog } from "./auditoria";
 
 type MotoComMarcaSlug = { slug: string; marca: { slug: string } | null };
@@ -57,13 +58,16 @@ export async function removerImagem(imagemId: string, motoId: string) {
     .eq("id", imagemId)
     .maybeSingle();
 
+  if (imagem?.url) {
+    const object = publicStorageObject(imagem.url);
+    if (!object) throw new Error("Não foi possível localizar o arquivo da imagem.");
+
+    const { error: storageError } = await supabase.storage.from(object.bucket).remove([object.path]);
+    if (storageError) throw new Error("Não foi possível remover o arquivo da imagem. Tente novamente.");
+  }
+
   const { error } = await supabase.from("imagens").delete().eq("id", imagemId);
   if (error) throw new Error("Não foi possível remover a imagem.");
-
-  if (imagem?.url) {
-    const path = imagem.url.split("/motos-fotos/")[1];
-    if (path) await supabase.storage.from("motos-fotos").remove([path]);
-  }
 
   await registrarLog(supabase, "excluiu_foto", "imagens", motoId, { imagemId });
   const { slug, marcaSlug } = await motoInfo(supabase, motoId);

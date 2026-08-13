@@ -10,7 +10,7 @@ import { getMarcas } from "@/lib/data/marcas";
 import { getConfiguracoes } from "@/lib/data/configuracoes";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 export default async function HomePage() {
   const [config, motos, marcas] = await Promise.all([

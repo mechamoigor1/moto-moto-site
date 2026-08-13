@@ -3,6 +3,8 @@ import { Footer } from "@/components/public/Footer";
 import { WhatsAppFloat } from "@/components/public/WhatsAppFloat";
 import { getConfiguracoes } from "@/lib/data/configuracoes";
 
+export const revalidate = 0;
+
 export default async function PublicLayout({ children }: { children: React.ReactNode }) {
   const config = await getConfiguracoes();
 
