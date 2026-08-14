@@ -20,6 +20,13 @@
     "server-only": "^0.0.1",
     "zod": "^4.4.3"
   },
+  "browserslist": [
+    "chrome >= 100",
+    "edge >= 100",
+    "firefox >= 100",
+    "safari >= 15",
+    "not dead"
+  ],
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",

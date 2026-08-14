@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 0;
+// ISR curto: dados do painel já invalidam via revalidatePath ao salvar;
+// isso só cobre edições feitas direto no Supabase, fora do app.
+export const revalidate = 60;
 
 export default async function MotosPage() {
   const [config, motos, marcas] = await Promise.all([

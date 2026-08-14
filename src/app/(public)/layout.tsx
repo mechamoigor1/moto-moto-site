@@ -3,8 +3,10 @@ import { Footer } from "@/components/public/Footer";
 import { WhatsAppFloat } from "@/components/public/WhatsAppFloat";
 import { getConfiguracoes } from "@/lib/data/configuracoes";
 
-// Dados administrados diretamente no Supabase devem aparecer sem aguardar ISR.
-export const revalidate = 0;
+// revalidate=0 forçava SSR dinâmico em toda navegação (server + Supabase em
+// cada request). ISR curto mantém a mesma frescor prática — edições feitas
+// pelo painel já invalidam via revalidatePath — e permite cache de borda.
+export const revalidate = 60;
 
 export default async function PublicLayout({ children }: { children: React.ReactNode }) {
   const config = await getConfiguracoes();
