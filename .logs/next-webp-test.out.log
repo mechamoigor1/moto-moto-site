@@ -1,0 +1,62 @@
+
+> moto-moto-paulinia@0.1.0 dev
+> next dev --port 56189
+
+   ▲ Next.js 15.5.21
+   - Local:        http://localhost:56189
+   - Network:      http://192.168.15.4:56189
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 16.4s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 779ms (173 modules)
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 18.7s (711 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.4s (702 modules)
+ ✓ Compiled in 1254ms (247 modules)
+ ✓ Compiled in 1327ms (247 modules)
+ ✓ Compiled in 1584ms (247 modules)
+ ✓ Compiled in 1272ms (247 modules)
+ ✓ Compiled in 1577ms (247 modules)
+ ✓ Compiled in 1311ms (247 modules)
+ ✓ Compiled in 1520ms (247 modules)
+ ✓ Compiled in 1434ms (247 modules)
+ ✓ Compiled in 1607ms (247 modules)
+ ✓ Compiled in 1297ms (247 modules)
+ ✓ Compiled in 1414ms (247 modules)
+ ✓ Compiled in 1568ms (247 modules)
+ ✓ Compiled in 1361ms (247 modules)
+ ✓ Compiled in 1424ms (247 modules)
+ ✓ Compiled in 1350ms (247 modules)
+ ✓ Compiled in 1359ms (247 modules)
+ ✓ Compiled in 1326ms (247 modules)
+ ✓ Compiled in 1332ms (247 modules)
+ ✓ Compiled in 1344ms (247 modules)
+ ✓ Compiled in 1542ms (243 modules)
+ ✓ Compiled in 986ms (243 modules)
+ ✓ Compiled /_not-found in 381ms (702 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.2s (1049 modules)
+ ✓ Compiled in 630ms (1049 modules)
+ GET /admin/login 500 in 12177ms
+ GET /admin/login 500 in 328ms
+ ✓ Compiled in 1087ms (400 modules)
+ ✓ Compiled in 1111ms (400 modules)
+ ✓ Compiled in 920ms (400 modules)
+ ✓ Compiled in 954ms (400 modules)
+ ✓ Compiled in 1030ms (400 modules)
+ ✓ Compiled in 978ms (400 modules)
+ ✓ Compiled in 913ms (400 modules)
+ ✓ Compiled in 956ms (400 modules)
+ ✓ Compiled in 1466ms (400 modules)
+ ✓ Compiled in 1256ms (400 modules)
+ ✓ Compiled in 1282ms (400 modules)
+ ✓ Compiled in 1982ms (400 modules)
+ ✓ Compiled in 2s (400 modules)
+ ✓ Compiled in 1111ms (400 modules)
+ ✓ Compiled in 1095ms (400 modules)
+ ✓ Compiled in 1215ms (400 modules)
+ ✓ Compiled in 1114ms (400 modules)
+[?25h

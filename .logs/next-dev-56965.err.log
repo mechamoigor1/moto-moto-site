@@ -1,0 +1,764 @@
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Sancs\Desktop\moto-image-migration\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\package-lock.json
+
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (106kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (254kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\(dashboard)\motos\[id]\editar\page.js:1:6495) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/admin/motos/46d7385f-3e94-4d88-b6b8-b944f1b5107c/editar'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async M (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\(public)\motos\[slug]\page.js:1:12841) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json',
+  page: '/motos/honda-fan-160-2021'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'
+    at async (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\routes-manifest.json'
+}
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⚠ ./src/app/(public)/motos/[slug]/page.tsx
+Attempted import error: 'WhatsAppIcon' is not exported from '@/components/public/WhatsAppFloat' (imported as 'WhatsAppIcon').
+
+Import trace for requested module:
+./src/app/(public)/motos/[slug]/page.tsx
+ ⨯ [TypeError: a[d] is not a function] { digest: '2231760284' }
+[TypeError: a[d] is not a function]
+ ⨯ [TypeError: a[d] is not a function]
+ ⨯ [TypeError: a[d] is not a function] { page: '/' }
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\webpack-runtime.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\require.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\load-components.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\utils.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\options.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\index.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\next.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: a[d] is not a function] { page: '/' }
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\webpack-runtime.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\require.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\load-components.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\utils.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\options.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\index.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\next.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\prerender-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\prerender-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\prerender-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\prerender-manifest.json',
+  page: '/admin/login'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\webpack-runtime.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\login\page.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\require.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\load-components.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\utils.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\options.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\index.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\next.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\prerender-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\prerender-manifest.json',
+  page: '/admin/login'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\webpack-runtime.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\app\admin\login\page.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\require.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\load-components.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\utils.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\options.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\swc\index.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\config.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\next.js
+- C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Sancs\Desktop\moto-image-migration\moto-moto-site-main\.next\prerender-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Sancs\\Desktop\\moto-image-migration\\moto-moto-site-main\\.next\\prerender-manifest.json'
+}

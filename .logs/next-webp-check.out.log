@@ -1,0 +1,16 @@
+
+> moto-moto-paulinia@0.1.0 dev
+> next dev --port 53820
+
+   ▲ Next.js 15.5.21
+   - Local:        http://localhost:53820
+   - Network:      http://192.168.15.4:53820
+
+ ✓ Starting...
+ ✓ Ready in 13.5s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 2.7s (173 modules)
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 16s (729 modules)
+ GET /admin/login 200 in 18344ms
+[?25h
