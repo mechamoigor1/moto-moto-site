@@ -16,9 +16,9 @@ export default async function AdminDashboardLayout({ children }: { children: Rea
   }
 
   return (
-    <div className="flex min-h-screen bg-black text-white">
+    <div className="flex min-h-screen flex-col bg-black text-white md:flex-row">
       <Sidebar email={email} />
-      <div className="flex-1 overflow-x-hidden p-8">{children}</div>
+      <div className="flex-1 overflow-x-hidden p-4 md:p-8">{children}</div>
     </div>
   );
 }
