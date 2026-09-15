@@ -184,28 +184,36 @@ type MotoComMarcaSlug = { slug: string; marca: { slug: string } | null };
 
 export async function excluirMoto(id: string) {
   const supabase = await createClient();
-  const { data: moto } = await supabase
-    .from("motos")
-    .select("slug, marca:marcas(slug)")
-    .eq("id", id)
-    .maybeSingle()
-    .returns<MotoComMarcaSlug>();
 
-  const { data: imagens, error: imagensError } = await supabase
-    .from("imagens")
-    .select("url")
-    .eq("moto_id", id);
+  const [{ data: moto }, { data: imagens, error: imagensError }] = await Promise.all([
+    supabase
+      .from("motos")
+      .select("slug, marca:marcas(slug)")
+      .eq("id", id)
+      .maybeSingle()
+      .returns<MotoComMarcaSlug>(),
+    supabase.from("imagens").select("url").eq("moto_id", id),
+  ]);
 
   if (imagensError) throw new Error("Não foi possível localizar as fotos da moto.");
 
+  const caminhosPorBucket = new Map<string, string[]>();
   for (const imagem of imagens ?? []) {
     const object = publicStorageObject(imagem.url);
     if (!object) throw new Error("Não foi possível localizar um arquivo de foto da moto.");
+    const caminhos = caminhosPorBucket.get(object.bucket) ?? [];
+    caminhos.push(object.path);
+    caminhosPorBucket.set(object.bucket, caminhos);
+  }
 
-    const { error: storageError } = await supabase.storage.from(object.bucket).remove([object.path]);
-    if (storageError) {
-      throw new Error("Não foi possível remover todas as fotos da moto. A moto não foi apagada.");
-    }
+  // Remove todos os arquivos de cada bucket em uma única chamada, em vez de um upload por vez.
+  const remocoes = await Promise.all(
+    Array.from(caminhosPorBucket.entries()).map(([bucket, caminhos]) =>
+      supabase.storage.from(bucket).remove(caminhos)
+    )
+  );
+  if (remocoes.some((r) => r.error)) {
+    throw new Error("Não foi possível remover todas as fotos da moto. A moto não foi apagada.");
   }
 
   const { error } = await supabase.from("motos").delete().eq("id", id);

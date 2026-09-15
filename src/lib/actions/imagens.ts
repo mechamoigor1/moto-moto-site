@@ -44,19 +44,21 @@ export async function adicionarImagem(motoId: string, url: string, altText: stri
 
   if (error) throw new Error("Não foi possível salvar a imagem.");
 
-  await registrarLog(supabase, "adicionou_imagem", "imagens", motoId, { url });
-  const { slug, marcaSlug } = await motoInfo(supabase, motoId);
+  const [, { slug, marcaSlug }] = await Promise.all([
+    registrarLog(supabase, "adicionou_imagem", "imagens", motoId, { url }),
+    motoInfo(supabase, motoId),
+  ]);
   revalidarPublico(slug, marcaSlug);
   revalidatePath(`/admin/motos/${motoId}/editar`);
 }
 
 export async function removerImagem(imagemId: string, motoId: string) {
   const supabase = await createClient();
-  const { data: imagem } = await supabase
-    .from("imagens")
-    .select("url")
-    .eq("id", imagemId)
-    .maybeSingle();
+
+  const [{ data: imagem }, { slug, marcaSlug }] = await Promise.all([
+    supabase.from("imagens").select("url").eq("id", imagemId).maybeSingle(),
+    motoInfo(supabase, motoId),
+  ]);
 
   if (imagem?.url) {
     const object = publicStorageObject(imagem.url);
@@ -66,22 +68,26 @@ export async function removerImagem(imagemId: string, motoId: string) {
     if (storageError) throw new Error("Não foi possível remover o arquivo da imagem. Tente novamente.");
   }
 
-  const { error } = await supabase.from("imagens").delete().eq("id", imagemId);
+  const [{ error }] = await Promise.all([
+    supabase.from("imagens").delete().eq("id", imagemId),
+    registrarLog(supabase, "excluiu_foto", "imagens", motoId, { imagemId }),
+  ]);
   if (error) throw new Error("Não foi possível remover a imagem.");
 
-  await registrarLog(supabase, "excluiu_foto", "imagens", motoId, { imagemId });
-  const { slug, marcaSlug } = await motoInfo(supabase, motoId);
   revalidarPublico(slug, marcaSlug);
   revalidatePath(`/admin/motos/${motoId}/editar`);
 }
 
 export async function moverImagem(motoId: string, imagemId: string, direcao: "up" | "down") {
   const supabase = await createClient();
-  const { data: imagens } = await supabase
-    .from("imagens")
-    .select("id, ordem")
-    .eq("moto_id", motoId)
-    .order("ordem", { ascending: true });
+  const [{ data: imagens }, { slug, marcaSlug }] = await Promise.all([
+    supabase
+      .from("imagens")
+      .select("id, ordem")
+      .eq("moto_id", motoId)
+      .order("ordem", { ascending: true }),
+    motoInfo(supabase, motoId),
+  ]);
 
   if (!imagens) return;
 
@@ -97,7 +103,6 @@ export async function moverImagem(motoId: string, imagemId: string, direcao: "up
     supabase.from("imagens").update({ ordem: atual.ordem }).eq("id", vizinho.id),
   ]);
 
-  const { slug, marcaSlug } = await motoInfo(supabase, motoId);
   revalidarPublico(slug, marcaSlug);
   revalidatePath(`/admin/motos/${motoId}/editar`);
 }
