@@ -10,13 +10,7 @@ import type { MotoComRelacoes } from "@/types/database";
 const SWIPE_THRESHOLD_PX = 40;
 
 function Badge({ moto }: { moto: MotoComRelacoes }) {
-  if (moto.status === "vendida") {
-    return (
-      <div className="absolute left-2.5 top-2.5 z-10 rounded-full bg-[#555] px-2.5 py-[3px] text-[10px] font-bold uppercase tracking-[1.5px] text-white">
-        Vendida
-      </div>
-    );
-  }
+  if (moto.status === "vendida") return null;
   if (moto.status === "reservada") {
     return (
       <div className="absolute left-2.5 top-2.5 z-10 rounded-full bg-[#8a5a00] px-2.5 py-[3px] text-[10px] font-bold uppercase tracking-[1.5px] text-white">
@@ -128,9 +122,18 @@ function CardImagem({ moto, nomeCompleto }: { moto: MotoComRelacoes; nomeComplet
         fill
         draggable={false}
         sizes="(max-width: 600px) 50vw, (max-width: 1024px) 33vw, 260px"
-        className="object-cover transition-transform duration-[400ms] group-hover:scale-[1.04]"
+        className={`object-cover transition-transform duration-[400ms] group-hover:scale-[1.04] ${
+          moto.status === "vendida" ? "grayscale" : ""
+        }`}
         style={{ objectPosition: "center 20%" }}
       />
+      {moto.status === "vendida" && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/35">
+          <span className="-rotate-[10deg] rounded border-[3px] border-red-600 px-4 py-1 text-2xl font-black uppercase tracking-[3px] text-red-600">
+            Vendida
+          </span>
+        </div>
+      )}
       {total > 1 && (
         <>
           <ArrowButton direcao="left" onClick={(e) => irPara(indice - 1, e)} />
